@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salve o Solo! - Jogo Educativo Interativo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Vinculação do arquivo CSS separado -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="app-header">
+    <div class="logo-container">
+      <span class="icon-leaf" aria-hidden="true">🌱</span>
+      <h1>Salve o Solo!</h1>
+    </div>
+    <button id="btn-credits-nav" class="btn-secondary-sm" aria-label="Ver Créditos do Projeto">Créditos 📜</button>
+  </header>
+
+  <main id="app-container" class="game-card" aria-live="polite">
+    <!-- Renderizado Dinamicamente pelo JavaScript -->
+  </main>
+
+  <footer class="app-footer">
+    <p>Projeto <strong>Meninas pelo Clima</strong> • Preservação, Ciência e Educação Ambiental</p>
+  </footer>
+
+  <!-- Modal de Créditos Integrado -->
+  <div id="modal-credits" class="modal-overlay hidden" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+    <div class="modal-content">
+      <button id="btn-close-modal" class="btn-close" aria-label="Fechar modal">&times;</button>
+      <h2 id="modal-title">Créditos do Jogo</h2>
+      <hr>
+      <div class="credits-body">
+        <section class="credit-group">
+          <h3>Concepção e Autoria Estudantil</h3>
+          <p><strong>C.E. Alexander Graham Bell</strong></p>
+          <ul>
+            <li>Kaylanne Nogueira da Silva <em>(Estudante e Bolsista de Iniciação Científica Júnior - ICJ)</em></li>
+            <li>Maísa Cristina Miguel dos Santos</li>
+            <li>Alannys Medeiros Duarte Lisboa</li>
+            <li>Marcelly Soares</li>
+            <li>Anna Karolina da Silva</li>
+            <li>Samara Barbosa</li>
+            <li>Sara Barbosa</li>
+            <li>Kamila Souza</li>
+          </ul>
+        </section>
+
+        <section class="credit-group">
+          <h3>Orientação Docente</h3>
+          <p><strong>Renata Millan</strong> — Professora do C.E. Alexander Graham Bell e bolsista AT/CNPq.</p>
+        </section>
+
+        <section class="credit-group">
+          <h3>Aperfeiçoamento da Proposta e Apoio ao Desenvolvimento</h3>
+          <p><strong>Ingrid Borges</strong> — Bolsista PDJ/CNPq. Contribuições para o aprimoramento da ideia, elaboração do prompt e apoio ao desenvolvimento do jogo.</p>
+        </section>
+
+        <section class="credit-group">
+          <h3>Pesquisa e Desenvolvimento</h3>
+          <p><strong>Alexandra Crivel</strong> — Bolsista ADC/CNPq.</p>
+        </section>
+
+        <section class="credit-group">
+          <h3>Coordenação do Projeto</h3>
+          <p><strong>Cleonice Puggian</strong> — Professora da UERJ e coordenadora do projeto Meninas pelo Clima — CNPq/FAPERJ.</p>
+        </section>
+
+        <section class="credit-group">
+          <h3>Ferramentas Utilizadas no Processo</h3>
+          <ul>
+            <li><strong>ChatGPT:</strong> Apoio à elaboração do prompt.</li>
+            <li><strong>Gemini:</strong> Apoio à geração do código.</li>
+            <li><strong>CodePen:</strong> Ambiente de execução e testes.</li>
+          </ul>
+        </section>
+
+        <div class="credits-link-box">
+          <a href="https://meninaspeloclima.uerj.br" target="_blank" rel="noopener noreferrer" class="external-link">Conheça o Projeto Meninas pelo Clima ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vinculação do arquivo JS separado -->
+  <script src="script.js"></script>
+</body>
+</html>
