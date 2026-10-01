@@ -7,15 +7,43 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- Vinculação do arquivo CSS separado -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="app-header">
-    <div class="logo-container">
-      <span class="icon-leaf" aria-hidden="true">🌱</span>
-      <h1>Salve o Solo!</h1>
+    <div class="logo-container" style="max-width: 320px; width: 100%;">
+      <!-- Logotipo Integrado em Vetor (SVG) -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="100%" height="auto" role="img" aria-label="Logotipo Salve o Solo">
+        <defs>
+          <linearGradient id="leafGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+            <stop offset="0%" stop-color="#2e7d32" />
+            <stop offset="100%" stop-color="#66bb6a" />
+          </linearGradient>
+          <linearGradient id="soilGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#8d6e63" />
+            <stop offset="100%" stop-color="#5d4037" />
+          </linearGradient>
+        </defs>
+
+        <!-- Ícone do Solo e Broto -->
+        <g transform="translate(10, 10)">
+          <circle cx="50" cy="50" r="45" fill="url(#soilGrad)" />
+          <path d="M 15,55 Q 50,75 85,55 Q 50,85 15,55 Z" fill="#4e342e" opacity="0.5" />
+          <path d="M 50,55 C 30,40 25,20 42,12 C 48,25 48,40 50,55 Z" fill="url(#leafGrad)" />
+          <path d="M 50,55 C 70,35 75,10 52,5 C 45,20 48,38 50,55 Z" fill="#81c784" />
+          <path d="M 50,55 Q 52,30 52,10" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.6" stroke-linecap="round" />
+          <path d="M 20,65 C 30,85 70,85 80,65 C 70,78 30,78 20,65 Z" fill="#f9a825" />
+        </g>
+
+        <!-- Tipografia do Logotipo -->
+        <text x="120" y="58" font-family="'Fredoka', 'Nunito', sans-serif" font-size="42" font-weight="700" fill="#2e7d32">
+          Salve o Solo!
+        </text>
+        <text x="122" y="85" font-family="'Nunito', sans-serif" font-size="16" font-weight="700" fill="#8d6e63" letter-spacing="1">
+          MENINAS PELO CLIMA
+        </text>
+      </svg>
     </div>
     <button id="btn-credits-nav" class="btn-secondary-sm" aria-label="Ver Créditos do Projeto">Créditos 📜</button>
   </header>
@@ -76,6 +104,7 @@
             <li><strong>ChatGPT:</strong> Apoio à elaboração do prompt.</li>
             <li><strong>Gemini:</strong> Apoio à geração do código.</li>
             <li><strong>CodePen:</strong> Ambiente de execução e testes.</li>
+            <li><strong>GitHub Pages:</strong> Hospedagem e publicação web.</li>
           </ul>
         </section>
 
@@ -86,7 +115,6 @@
     </div>
   </div>
 
-  <!-- Vinculação do arquivo JS separado -->
   <script src="script.js"></script>
 </body>
 </html>
